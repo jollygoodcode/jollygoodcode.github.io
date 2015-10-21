@@ -1,14 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Jolly Good Code's Blog</title>
-  <meta name="description" content="Articles by jollygoodcode about Ruby on Rails, and Web Development.">
-</head>
-<body>
-  <script>
-    window.location.replace('https://github.com/jollygoodcode/jollygoodcode.github.io/issues?q=is%3Aopen+is%3Aissue+label%3ABlog')
-  </script>
-</body>
-</html>
+---
+layout: default
+---
+
+<h1 id="logo">
+  <a href="http://www.jollygoodcode.com"><img src="https://cloud.githubusercontent.com/assets/1000669/10634660/faa5bd86-7825-11e5-8980-12636fccbc43.png"></a>
+  <span class="hide">Articles by Jolly Good Code</span>
+</h1>
+
+<div class="posts">
+  {% for post in site.posts %}
+  <div class="post">
+    <time class="post-date" datetime="{{ post.date }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </div>
+  {% endfor %}
+</div>

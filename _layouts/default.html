@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ site.title }}</title>
+    <meta name="description" content="Articles by Jolly Good Code about Ruby and Ruby on Rails.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    {% if page.permanent_url %}
+      <meta http-equiv="refresh" content="0; url={{ page.permanent_url }}">
+      <link rel="canonical" href="{{ page.permanent_url }}" />
+    {% endif %}
+
+    <link rel="stylesheet" href="/css/main.css" >
+  </head>
+  <body>
+    <div class="container">
+      {{ content }}
+    </div>
+  </body>
+</html>
