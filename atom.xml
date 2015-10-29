@@ -1,0 +1,28 @@
+---
+layout: null
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>{{ site.title }}</title>
+ <link href="{{ site.url }}{{ site.baseurl }}/atom.xml" rel="self"/>
+ <link href="{{ site.url }}{{ site.baseurl }}/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>{{ site.url }}</id>
+ <author>
+   <name>Jolly Good Coders</name>
+   <email>hello@jollygoodcode.com</email>
+ </author>
+
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>{{ post.permanent_url }}</id>
+   <content type="html">{{ post.description | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+
+</feed>
