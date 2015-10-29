@@ -31,6 +31,7 @@ def content
     title: "Enter a concise title."
     date: "#{Time.now.utc.strftime("%Y-%m-%dT%H:%M:%S")}"
     permanent_url: "https://github.com/jollygoodcode/jollygoodcode.github.io/issues/"
+    description: ""
     ---
   TEMPLATE
 end
