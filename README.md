@@ -1,6 +1,6 @@
 # Welcome to our blog!
 
-## [Click to Read](https://github.com/jollygoodcode/jollygoodcode.github.io/issues)
+## [Click to Read](https://github.com/jollygoodcode/jollygoodcode.github.io/labels/Blog)
 
 Click watch if you would like to get notification for new post.
 
