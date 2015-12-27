@@ -1,6 +1,6 @@
 ---
 title: "Introducing Automated Security Updates"
 date: "2015-12-24T16:00:00"
-permanent_url: "https://github.com/jollygoodcode/jollygoodcode.github.io/issues/"
+permanent_url: "https://github.com/jollygoodcode/jollygoodcode.github.io/issues/15"
 description: "Announcement for https://www.deppbot.com's new feature: Automated Security Updates."
 ---
